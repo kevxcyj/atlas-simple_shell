@@ -11,19 +11,31 @@ int main()
 {
     char prompt[] = "shell$ ";
 
-    char *string;
+    char *command;
     size_t size;
+    char *token;
 
-    string = NULL;
+    command = NULL;
     size = 0;
 
+/* print the prompt */
     printf("%s", prompt);
 
-    getline(&string, &size, stdin);
+/* read user input into the string variable */
+    getline(&command, &size, stdin);
 
-    printf("You entered: %s\n", string);
+    printf("You entered: %s\n", command);
 
-    free(string);
+
+    token = strtok(command, " ");
+
+    while (token != NULL)
+    {
+
+    }
+
+
+    free(command);
 
     return (0);
 }
