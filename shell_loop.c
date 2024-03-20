@@ -11,22 +11,17 @@ int main()
 {
     char prompt[] = "shell$ ";
 
-    char *string = NULL;
-    size_t size = 0;
-    size_t chars_read;
+    char *string;
+    size_t size;
+
+    string = NULL;
+    size = 0;
 
     printf("%s", prompt);
 
-    chars_read = getline(&string, &size, stdin);
-    printf("getline returned %ld\n", chars_read);
+    getline(&string, &size, stdin);
 
-    if (chars_read < 0) {
-        puts("couldn't read the input");
-        free(string);
-        return 1;
-    }
-
-    printf("<%s> is length %ld\n", string, strlen(string));
+    printf("You entered: %s\n", string);
 
     free(string);
 
