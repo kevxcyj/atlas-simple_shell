@@ -8,7 +8,7 @@
 #include <string.h>
 
 
-
+char **split_strings(char *string);
 
 
 
