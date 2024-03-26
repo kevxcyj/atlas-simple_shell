@@ -7,15 +7,17 @@
 
 int main()
 {
-    if (isatty(STDIN_FILENO))
+    while (1)
     {
-        intermode();
-    }
-    else
-    {
-        nonintermode();
+		if (isatty(STDIN_FILENO))
+		{
+			intermode();
+		}
+		else
+		{
+			nonintermode();
+		}
     }
 
-    return (0);
-
+	return (0);
 }
