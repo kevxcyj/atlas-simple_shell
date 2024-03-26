@@ -7,8 +7,8 @@
 #include <sys/wait.h>
 #include <string.h>
 
-
-
+int intermode();
+void nonintermode();
 
 
 

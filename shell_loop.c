@@ -5,7 +5,7 @@
  * gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
  */
 
-int main(int argc, char **argv)
+int main()
 {
     if (isatty(STDIN_FILENO))
     {
@@ -15,4 +15,7 @@ int main(int argc, char **argv)
     {
         nonintermode();
     }
+
+    return (0);
+
 }
