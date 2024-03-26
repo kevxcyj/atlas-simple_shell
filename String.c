@@ -12,7 +12,7 @@ char **split_strings(char *string)
 
 	if (!tokens)
 	{
-		printf(stderr, "ERROR\n");
+		fprintf(stderr, "ERROR\n");
 		exit(EXIT_FAILURE);
 	}
 	token = strtok (*string, delim);
@@ -31,7 +31,7 @@ char **split_strings(char *string)
 		/* Resizing for more memory */
 		if (!tokens)
 		{
-			printf(stderr, "ERROR");
+			fprintf(stderr, "ERROR");
 			exit(EXIT_FAILURE);
 		}
 	}
