@@ -4,9 +4,11 @@ char **split_strings(char *string)
 {
 	int size = 50;
 	int i = 0;
+	/* Current position in array */
 	char **tokens = malloc(size * sizeof(char *));
 	char *token;
 	char *delim = " ";
+	/* Delimiter searching for " " */
 
 	if (!tokens)
 	{
@@ -26,6 +28,7 @@ char **split_strings(char *string)
 	{
 		size += size;
 		tokens = realloc(tokens, size * sizeof(char*));
+		/* Resizing for more memory */
 		if (!tokens)
 		{
 			printf(stderr, "ERROR");
