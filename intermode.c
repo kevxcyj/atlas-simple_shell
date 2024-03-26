@@ -11,6 +11,7 @@ int intermode()
 	char *toks[100];
 	
     command = NULL;
+	token = NULL;
     size = 0;
 	i = 0;
 
@@ -28,12 +29,13 @@ int intermode()
 
 	while (token != NULL)
 	{
-		toks[i++] = token;
+		toks[i] = token;
+		printf("%s\n", toks[i]);
 		token = strtok(NULL, " ");
+		i++;
 	}
 
-	for (i = 0; i < 100; ++i) 
-        printf("%s\n", toks[i]);
+	free (command);
 
     return (0);
 }
