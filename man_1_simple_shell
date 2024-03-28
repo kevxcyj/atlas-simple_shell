@@ -4,8 +4,10 @@ SIMPLE_SHELL “MARCH 2024” “Atlas Simple Shell Partner Project"
 Shell.C
 
 SYNOPSIS
+A simple shell program for basic processes
 
 DESCRIPTION
+A simple shell created as an exercise for Atlas C programming course
 
 OPTIONS
 
