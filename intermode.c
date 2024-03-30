@@ -19,6 +19,8 @@ int intermode()
 /* convert string into tokens and store them in an array */
 	tokenize(toks, command);
 
+    search_path();
+
 /* free allocated memory */
 	free (command);
 
