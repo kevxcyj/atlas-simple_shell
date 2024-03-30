@@ -6,6 +6,8 @@ void search_path()
 	char **env = environ;
 	char *path_env;
 	char *path_copy;
+	char *token;
+	char full_path[1024];
 
     /* Get the PATH value */
     for (; *env != NULL; env++)
@@ -27,8 +29,9 @@ void search_path()
     }
 
     /* Tokenize the PATH and search each directory */
+	token = strtok(path_copy, ":");
 
-	
+
 
     /* Free allocated memory for the PATH copy*/
 
