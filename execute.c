@@ -2,6 +2,7 @@
 
 void shell_command(char **args) {
 	pid_t CDPR = fork();
+
 	/* Child process */
 	
 	if (CDPR == 0) {
@@ -17,5 +18,5 @@ void shell_command(char **args) {
 		wait(NULL);
 		/* Parent process waiting for child */
 	}
-	free(args);
+
 }

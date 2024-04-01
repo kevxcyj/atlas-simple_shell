@@ -12,6 +12,7 @@ int intermode();
 void nonintermode();
 void tokenize();
 void shell_command(char **args);
+char* search_path(char *filename);
 
 
 #endif

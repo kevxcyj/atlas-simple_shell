@@ -14,10 +14,11 @@ int intermode()
 
 /* read user input into the string variable */
     getline(&command, &size, stdin);
-    printf("You entered: %s\n", command);
+    command[strcspn(command, "\n")] = 0;
 
 /* convert string into tokens and store them in an array */
 	tokenize(toks, command);
+    toks[1] = NULL;
 
     shell_command(toks);
 

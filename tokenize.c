@@ -11,7 +11,6 @@ void tokenize(char *array[], char *command)
 	while (token != NULL)
 	{
 		array[i] = token;
-		printf("%s\n", array[i]);
 		token = strtok(NULL, " ");
 		i++;
 	}

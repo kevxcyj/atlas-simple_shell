@@ -1,6 +1,6 @@
 #include "shell.h"
 
-void search_path(char *filename)
+char* search_path(char *filename)
 {
 	extern char **environ;
 	char **env = environ;
@@ -47,11 +47,12 @@ void search_path(char *filename)
 		strcat(full_path, "/");
 		strcat(full_path, filename);
 
-		printf("Searching: %s", full_path);
+		printf("Searching: %s\n", full_path);
 
 		if (access(full_path, F_OK) == 0)
 		{
 			printf("File found at: %s\n", full_path);
+			return (full_path);
 			free(full_path);
 			free(path_copy);
 		}
@@ -61,6 +62,7 @@ void search_path(char *filename)
 	}
 
     /* Free allocated memory for the PATH copy*/
+	return (NULL);
 	free(path_copy);
 	perror("File not found in the PATH\n");
 }
