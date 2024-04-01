@@ -14,10 +14,6 @@ int main()
 				intermode();
 			}
 		}
-		else
-		{
-			nonintermode();
-		}
 
 	return (0);
 }
