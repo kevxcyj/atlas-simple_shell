@@ -11,5 +11,7 @@
 int intermode();
 void nonintermode();
 void tokenize();
+void shell_command(char **args);
+
 
 #endif
