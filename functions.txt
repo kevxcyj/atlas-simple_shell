@@ -1,0 +1,4 @@
+Functions that need to be written
+becasue not given in project
+
+- strncmp

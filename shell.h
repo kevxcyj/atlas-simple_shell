@@ -11,5 +11,6 @@
 int intermode();
 void nonintermode();
 void tokenize();
+void search_path();
 
 #endif
