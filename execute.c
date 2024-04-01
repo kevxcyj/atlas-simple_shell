@@ -17,5 +17,5 @@ void shell_command(char **args) {
 		wait(NULL);
 		/* Parent process waiting for child */
 	}
-	free(path);
+	free(args);
 }
