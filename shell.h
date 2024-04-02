@@ -9,7 +9,8 @@
 
 int intermode();
 void nonintermode();
-
+int exits();
+void env(char **envp);
 
 
 

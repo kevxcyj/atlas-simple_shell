@@ -1,4 +1,4 @@
-#include <shell.h>
+#include "shell.h"
 
 char **split_strings(char *string)
 {
@@ -15,7 +15,7 @@ char **split_strings(char *string)
 		fprintf(stderr, "ERROR\n");
 		exit(EXIT_FAILURE);
 	}
-	token = strtok (*string, delim);
+	token = strtok (string, delim);
 	while (token != NULL)
 	{
 		if (token[0] == ' ')
