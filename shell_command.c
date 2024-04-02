@@ -21,7 +21,6 @@ void shell_command(char **args) {
 	} else {
 		free(path);
 		wait(NULL);
-		free(path);
 		/* Parent process waiting for child */
 	}
 
