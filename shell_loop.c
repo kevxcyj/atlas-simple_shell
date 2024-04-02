@@ -8,15 +8,15 @@
 int main()
 {
 
-    if (isatty(STDIN_FILENO))
-    {
-        intermode();
-    }
-    else
-    {
-        nonintermode();
-    }
 
+        if (isatty(STDIN_FILENO))
+        {
+            intermode();
+        }
+        else
+        {
+            nonintermode();
+        }
     return (0);
 
 }
