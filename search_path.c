@@ -60,6 +60,5 @@ char* search_path(char *filename)
 
     /* Free allocated memory for the PATH copy*/
 	return (NULL);
-	free(path_copy);
 	perror("File not found in the PATH\n");
 }
