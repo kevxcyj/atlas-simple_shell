@@ -12,5 +12,9 @@ Interactive Mode
 Non-interactive Mode 
 ![alt text](https://github.com/kevxcyj/atlas-simple_shell/assets/155566833/2b77d010-dc51-4da5-a78e-4abf6392bd17)
 
+# Flow chart
+![alt text](https://github.com/kevxcyj/atlas-simple_shell/assets/155566833/c8af82cd-5892-4b32-9de5-e0c75fcb4ec5)
+
+
 
 Kevin Cyrus Jr., Tanner Saint, Rain Nyte
