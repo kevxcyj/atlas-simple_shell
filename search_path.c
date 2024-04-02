@@ -47,11 +47,8 @@ char* search_path(char *filename)
 		strcat(full_path, "/");
 		strcat(full_path, filename);
 
-		printf("Searching: %s\n", full_path);
-
 		if (access(full_path, F_OK) == 0)
 		{
-			printf("File found at: %s\n", full_path);
 			return (full_path);
 			free(full_path);
 			free(path_copy);

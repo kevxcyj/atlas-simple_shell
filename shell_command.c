@@ -2,12 +2,14 @@
 
 void shell_command(char **args) {
 	pid_t CDPR = fork();
+	char *path;
 
+	path = search_path(args[0]);
 	/* Child process */
 	
 	if (CDPR == 0) {
 	
-		if (execve(args[0], args, NULL) == -1) {
+		if (execve(path, args, NULL) == -1) {
 			perror("execve");
 			exit(EXIT_FAILURE);
 		}
