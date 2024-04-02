@@ -11,12 +11,15 @@ void shell_command(char **args) {
 	
 		if (execve(path, args, NULL) == -1) {
 			perror("execve");
+			free(path);
 			exit(EXIT_FAILURE);
 		}
 	} else if (CDPR < 0) {
 		perror("fork");
+		free(path);
 		exit(EXIT_FAILURE);
 	} else {
+		free(path);
 		wait(NULL);
 		/* Parent process waiting for child */
 	}

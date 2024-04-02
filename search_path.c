@@ -49,9 +49,8 @@ char* search_path(char *filename)
 
 		if (access(full_path, F_OK) == 0)
 		{
-			return (full_path);
-			free(full_path);
 			free(path_copy);
+			return (full_path);
 		}
 
 		free(full_path);
@@ -59,6 +58,8 @@ char* search_path(char *filename)
 	}
 
     /* Free allocated memory for the PATH copy*/
+	free(full_path);
+	free(path_copy);
 	return (NULL);
 	perror("File not found in the PATH\n");
 }
