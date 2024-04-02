@@ -11,7 +11,7 @@ int nonintermode()
 
 /* read user input into the string variable */
     getline(&command, &size, stdin);
-    command = strtok(command, );
+    command = strtok(command, "\n");
 
 /* convert string into tokens and store them in an array */
 	tokenize(toks, command);
