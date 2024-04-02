@@ -14,7 +14,7 @@ int intermode()
 
 /* read user input into the string variable */
     getline(&command, &size, stdin);
-    command[strcspn(command, "\n")] = 0;
+    command = strtok(command, "\n");
 
 /* convert string into tokens and store them in an array */
 	tokenize(toks, command);
