@@ -9,7 +9,7 @@
 #include <string.h>
 
 int intermode();
-void nonintermode();
+int nonintermode();
 void tokenize();
 void shell_command(char **args);
 char* search_path(char *filename);

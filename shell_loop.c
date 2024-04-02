@@ -13,7 +13,7 @@ int main()
 	}
 	else
 	{
-		intermode();
+		nonintermode();
 	}
 
 	return (0);
