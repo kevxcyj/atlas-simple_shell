@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
-* nonintermode - Funtion to fun the non interactive mode 
+* nonintermode - Funtion to run the non interactive mode 
 *
 * Return - 0
 */
