@@ -1,5 +1,10 @@
 #include "shell.h"
 
+/**
+ * tokenize- tokenizes the input string into an array
+ * @array: array for the tokens to be stored
+ * @command: input string of commands to be tokenized
+*/
 void tokenize(char *array[], char *command)
 {
     char *token;

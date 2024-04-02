@@ -1,5 +1,9 @@
 #include "shell.h"
-
+/**
+ * intermode- starts the interactive mode of the shell
+ *
+ * Return: Always 0
+*/
 int intermode()
 {
     char *command;

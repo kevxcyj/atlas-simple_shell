@@ -1,5 +1,11 @@
 #include "shell.h"
 
+/**
+ * search_path- Tokenizes the PATH and searches each directory for the input file
+ * @filename: name of the file to be searched for
+ *
+ * Return: The full path of the file if found or NULL
+*/
 char* search_path(char *filename)
 {
 	extern char **environ;
