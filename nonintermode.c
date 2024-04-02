@@ -1,5 +1,9 @@
 #include "shell.h"
-
+/**
+* nonintermode - Funtion to fun the non interactive mode 
+*
+* Return - 0
+*/
 int nonintermode()
 {
     char *command;
