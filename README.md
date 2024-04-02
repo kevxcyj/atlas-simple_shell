@@ -11,3 +11,6 @@ Interactive Mode
 
 Non-interactive Mode 
 ![alt text](https://github.com/kevxcyj/atlas-simple_shell/assets/155566833/2b77d010-dc51-4da5-a78e-4abf6392bd17)
+
+
+Kevin Cyrus Jr., Tanner Saint, Rain Nyte
