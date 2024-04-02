@@ -5,14 +5,12 @@
  * gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
  */
 
-int main(__attribute__((unused)) int argc, char **envp)
+int main()
 {
 
     if (isatty(STDIN_FILENO))
     {
         intermode();
-        exits();
-        env(envp);
     }
     else
     {

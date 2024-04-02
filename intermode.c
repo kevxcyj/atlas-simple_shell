@@ -35,6 +35,17 @@ int intermode()
 		i++;
 	}
 
+	/*call built-in functions if correct command entered*/
+
+	if (strcmp(command, "exit") == 0)
+	{
+		exits();
+	}
+	if (strcmp(command, "env") == 0)
+	{
+		env();
+	}
+
 	free (command);
 
     return (0);
