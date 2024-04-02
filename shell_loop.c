@@ -7,13 +7,14 @@
 
 int main()
 {
-		if (isatty(STDIN_FILENO))
-		{
-			while (1)
-			{
-				intermode();
-			}
-		}
+	if (isatty(STDIN_FILENO))
+	{
+		intermode();
+	}
+	else
+	{
+		intermode();
+	}
 
 	return (0);
 }
