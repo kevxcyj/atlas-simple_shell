@@ -18,7 +18,6 @@ int intermode()
 
 /* convert string into tokens and store them in an array */
 	tokenize(toks, command);
-    toks[1] = NULL;
 
     shell_command(toks);
 

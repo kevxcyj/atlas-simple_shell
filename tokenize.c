@@ -14,4 +14,6 @@ void tokenize(char *array[], char *command)
 		token = strtok(NULL, " ");
 		i++;
 	}
+	array[i] = NULL;
+
 }
