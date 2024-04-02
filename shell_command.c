@@ -18,6 +18,7 @@ void shell_command(char **args) {
 		exit(EXIT_FAILURE);
 	} else {
 		wait(NULL);
+		free(path);
 		/* Parent process waiting for child */
 	}
 
